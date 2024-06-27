@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - week03 - responsive-images - Donald Polidor</title>
+    <meta name="description" content="WDD 131 - week03 - responsive-images - Donald Polidor">
+    <meta name="author" content="Donald Polidor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Picture</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/haiti_temple_H.webp" media="(min-width: 1000px)">
+                <source srcset="images/haiti_temple_M.webp" media="(min-width: 500px)">
+                <img src="images/haiti_temple_S.webp" alt="Temple name and location" width="500" height="250">
+            </picture>
+        </div>
+    </main>
+
+    <footer>
+        <p>©2024 💻 Donald Polidor 💻 Haïti</p>
+    </footer>
+
+</body>
+
+</html>
