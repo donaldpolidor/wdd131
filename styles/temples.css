@@ -1,3 +1,4 @@
+/* Reset some basic elements */
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +31,7 @@ nav .nav-container {
 .nav-menu {
     list-style: none;
     display: flex;
-    gap: 3.5rem;
+    gap: 1rem; /* Reduced gap to make it more consistent */
 }
 
 .nav-menu li a {
@@ -79,6 +80,7 @@ figure {
 figure img {
     width: 100%;
     height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
 }
 
 /* Footer Styles */
@@ -88,4 +90,42 @@ footer {
     background-color: blue;
     font-size: 0.9rem;
     color: white;
+}
+
+footer p {
+    color: white; /* Ensure all text in footer is white */
+}
+
+.highlight {
+    font-weight: bold;
+    color: white; /* Ensure highlighted text is white */
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: blue;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }

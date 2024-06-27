@@ -1,0 +1,92 @@
+body {
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+	background-color: #f0f0f0; /* Ajout d'une couleur de fond pour améliorer le contraste */
+	color: #333; /* Couleur de texte principale */
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+	padding: 0 20px; /* Espacement intérieur pour le contenu */
+}
+
+marquee {
+	padding: 1rem;
+	background-color: #a596fc;
+    text-align: center;
+}
+
+h1 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding-bottom: 10px; /* Espacement sous le titre */
+	margin-bottom: 20px; /* Marge sous le titre */
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+	grid-gap: 20px; /* Espacement entre les éléments */
+}
+
+h2 {
+	color: navy;
+	text-align: left; /* Aligné à gauche */
+	grid-column: 1 / -1; /* S'étend sur les deux colonnes */
+}
+
+article p {
+	text-align: justify;
+}
+
+section {
+	padding: 20px;
+	background-color: #fff; /* Fond blanc pour sections */
+	border-radius: 5px; /* Coins arrondis */
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Légère ombre pour effet de profondeur */
+}
+
+.callout {
+	color: #fff;
+	background-color: #702963;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	grid-column: 1 / -1; /* S'étend sur les deux colonnes */
+    text-align: justify;
+}
+
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: smaller;
+	text-align: left;
+	padding-top: 20px; /* Espacement en haut du pied de page */
+}
+
+ul {
+	padding: 0;
+	list-style-type: none; /* Suppression des puces */
+	margin: 0;
+}
+
+ul li {
+	margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+}
+
+.highlight {
+	color: #702963; /* Couleur de surbrillance */
+	font-weight: bold; /* Texte en gras pour mise en évidence */
+}
+
+.banner {
+	height: 200px; /* Hauteur fixe */
+	background-color: #eee;
+	text-align: center; /* Centrage du contenu */
+	line-height: 200px; /* Centrage vertical */
+	font-size: 1.5rem; /* Taille de police */
+	color: navy;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
