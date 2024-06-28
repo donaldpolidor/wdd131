@@ -1,0 +1,13 @@
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .box-top-left,
+    .box-bottom-right {
+        position: static;
+        margin: 10px auto;
+        width: calc(100% - 40px); /* Adjust width to fit within the screen */
+    }
+    
+    .hero {
+        text-align: center;
+    }
+}

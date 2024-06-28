@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temples photo album - Donald Polidor</title>
+    <meta name="description" content="WDD 131 - Temples photo album - Donald Polidor">
+    <meta name="author" content="Donald Polidor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+
+<body>
+    <header>
+        <h1>Haïti</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/citadele_H.webp" media="(min-width: 1000px)">
+                <img src="images/citadele_S.webp" alt="La Citadelle, Haïti" width="1500" height="750">
+            </picture>
+            <div class="box-top-left">
+                <h2 class="box-title">Data</h2>
+                <p>Area: 27,750 km²</p>
+                <p>Population: 11,470,261</p>
+                <p>Capital: Port-au-Prince</p>
+                <p>Languages: Haitian Creole, French</p>
+                <p>Currency: Haitian Gourde (HTG)</p>
+                <p>Time Zone: UTC−5 (EST), UTC−4 (EDT in summer)</p>
+                <p>Calling Code: +509</p>
+                <p>Internet TLD: .ht</p>
+            </div>
+            <div class="box-bottom-right">
+                <h2 class="box-title">Weather ⛅</h2>
+                <p>Current weather details...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 💻 <span class="highlight">Donald Polidor</span> 💻 Haïti</p>
+        <p id="lastModified">Last modification: <span class="highlight"></span></p>
+    </footer>
+
+    <script defer src="scripts/place.js"></script>
+</body>
+
+</html>
