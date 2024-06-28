@@ -1,17 +1,10 @@
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    .box-top-left,
-    .box-bottom-right {
+    .data,
+    .weather {
         position: static;
         margin: 10px auto;
         width: calc(100% - 40px);
-    }
-
-    .box-bottom-right {
-        margin-top: 0;
-    }
-
-    .hero {
-        text-align: center;
+        background-color: var(--data-bg-color);
     }
 }
