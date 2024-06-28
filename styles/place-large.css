@@ -4,9 +4,13 @@
     .box-bottom-right {
         position: static;
         margin: 10px auto;
-        width: calc(100% - 40px); /* Adjust width to fit within the screen */
+        width: calc(100% - 40px);
     }
-    
+
+    .box-bottom-right {
+        margin-top: 0;
+    }
+
     .hero {
         text-align: center;
     }

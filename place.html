@@ -23,7 +23,8 @@
         <div class="hero">
             <picture>
                 <source srcset="images/citadele_H.webp" media="(min-width: 1000px)">
-                <img src="images/citadele_S.webp" alt="La Citadelle, Haïti" width="1500" height="750">
+                <source srcset="images/citadele_S.webp" media="(min-width: 600px)">
+                <img src="images/citadele_S.webp" alt="La Citadelle, Haïti" class="hero-img">
             </picture>
             <div class="box-top-left">
                 <h2 class="box-title">Data</h2>
@@ -37,8 +38,10 @@
                 <p>Internet TLD: .ht</p>
             </div>
             <div class="box-bottom-right">
-                <h2 class="box-title">Weather ⛅</h2>
-                <p>Current weather details...</p>
+                <h2 class="box-title">Weather <img src="images/sunny_icon.svg" alt="Weather Icon" class="weather-icon"></h2>
+                <p>Temperature: 28°C</p>
+                <p>Wind Speed: 15 km/h</p>
+                <p>Wind Chill: <span id="windChill">N/A</span></p>
             </div>
         </div>
     </main>
