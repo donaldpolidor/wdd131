@@ -41,10 +41,9 @@ main {
 }
 
 .hero {
-    margin: 0;
-    padding: 0;
     position: relative;
-    text-align: center; /* Center align content in hero */
+    text-align: center;
+    overflow: hidden;
 }
 
 .hero img.hero-img {
@@ -53,40 +52,85 @@ main {
     display: block;
 }
 
-footer {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    height: 70px;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-}
-
-.data,
-.weather {
-    padding: 10px;
-    color: black;
-    background-color: var(--data-bg-color);
-}
-
-.data {
+.info-container {
     position: absolute;
     top: 10px;
     left: 10px;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.data {
+    padding: 10px;
+    color: black;
+    background-color: var(--data-bg-color);
     width: var(--box-width);
 }
 
+.data h2,
+.weather h2 {
+    background-color: red;
+    padding: 5px;
+}
+
 .weather {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    padding: 10px;
+    color: black;
+    background-color: var(--weather-bg-color);
     width: var(--box-width);
+    align-self: flex-end;
     text-align: center;
 }
 
 .weather-icon {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     vertical-align: middle;
 }
 
+footer{
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --box-width: 220px; 
+    }
+}
+
+@media (max-width: 992px) {
+    :root {
+        --box-width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --box-width: calc(100% - 40px); 
+    }
+
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        margin: 10px auto;
+        width: calc(100% - 40px);
+    }
+
+    .data,
+    .weather {
+        position: static;
+        margin: 10px auto;
+        width: calc(100% - 40px);
+    }
+
+    .weather {
+        align-self: auto;
+    }
+}
