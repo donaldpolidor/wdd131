@@ -33,7 +33,7 @@ nav .nav-container {
 .nav-menu {
     list-style: none;
     display: flex;
-    gap: 1rem; 
+    gap: 1rem;
 }
 
 .nav-menu li a {
@@ -70,22 +70,23 @@ main {
 
 .gallery {
     display: grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
 }
 
-.gallery figure {
+figure {
     margin: 0;
     text-align: center;
     background-color: rgb(206, 213, 253); 
     padding: 1rem; 
-    border-radius: 10px;
+    border-radius: 10px; 
 }
 
-.gallery img {
+figure img {
     width: 100%;
     height: auto;
     object-fit: cover; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.534);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.534); 
     border-radius: 10px; 
 }
 
@@ -110,5 +111,5 @@ footer p {
 
 .highlight {
     font-weight: bold;
-    color: white;
+    color: white; 
 }

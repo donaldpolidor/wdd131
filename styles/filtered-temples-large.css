@@ -9,10 +9,6 @@
 }
 
 @media (max-width: 767px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .nav-menu {
         display: none;
         flex-direction: column;
