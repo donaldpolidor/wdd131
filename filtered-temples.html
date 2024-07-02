@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temples photo album - Donald Polidor</title>
+    <meta name="description" content="WDD 131 - Temples photo album - Donald Polidor">
+    <meta name="author" content="Donald Polidor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-title">Temples album - Donald Polidor</div>
+                <ul class="nav-menu">
+                    <li><a href="#" data-filter="all">Home</a></li>
+                    <li><a href="#" data-filter="old">Old</a></li>
+                    <li><a href="#" data-filter="new">New</a></li>
+                    <li><a href="#" data-filter="large">Large</a></li>
+                    <li><a href="#" data-filter="small">Small</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section class="gallery" id="gallery"></section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 💻 <span class="highlight">Donald Polidor</span> 💻 Haïti</p>
+        <p id="lastModified">Last modification: <span class="highlight"></span></p>
+    </footer>
+
+    <script defer src="scripts/filtered-temples.js"></script>
+</body>
+
+</html>

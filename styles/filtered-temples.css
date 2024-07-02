@@ -1,0 +1,114 @@
+/* styles/filtered-temples.css */
+
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Navigation Bar Styles */
+header {
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+
+nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-title {
+    font-size: 1.8rem;
+    font-family: 'DM Serif Text', serif;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem; 
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: rgb(172, 172, 172);
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.gallery {
+    display: grid;
+    gap: 1rem;
+}
+
+.gallery figure {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(206, 213, 253); 
+    padding: 1rem; 
+    border-radius: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.534);
+    border-radius: 10px; 
+}
+
+figcaption {
+    color: black;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: blue;
+    font-size: 0.9rem;
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+.highlight {
+    font-weight: bold;
+    color: white;
+}
