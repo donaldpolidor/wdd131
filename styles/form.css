@@ -58,12 +58,14 @@ input[type="radio"], input[type="checkbox"] {
 .rating {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .rating label {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 0.5rem;
 }
 
 .rating span {
@@ -95,24 +97,3 @@ footer {
     padding: 1rem;
 }
 
-/* Mobile styles */
-@media (max-width: 799px) {
-    body {
-        padding: 1rem;
-    }
-
-    .rating {
-        flex-direction: column;
-    }
-
-    fieldset label {
-        display: block;
-    }
-}
-
-/* Large screen styles */
-@media (min-width: 800px) {
-    main {
-        max-width: 800px;
-    }
-}
