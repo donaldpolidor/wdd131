@@ -1,0 +1,21 @@
+/* Mobile styles */
+@media (max-width: 799px) {
+    body {
+        padding: 1rem;
+    }
+
+    .rating {
+        flex-direction: column;
+    }
+
+    fieldset label {
+        display: block;
+    }
+}
+
+/* Large screen styles */
+@media (min-width: 800px) {
+    main {
+        max-width: 800px;
+    }
+}

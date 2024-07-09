@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product Review Form">
+    <meta name="author" content="Donald Polidor">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css" media="screen and (min-width: 800px)">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a product...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <div class="rating">
+                    <label><span>★</span><input type="radio" name="rating" value="1" required></label>
+                    <label><span>★★</span><input type="radio" name="rating" value="2" required></label>
+                    <label><span>★★★</span><input type="radio" name="rating" value="3" required></label>
+                    <label><span>★★★★</span><input type="radio" name="rating" value="4" required></label>
+                    <label><span>★★★★★</span><input type="radio" name="rating" value="5" required></label>
+                </div>
+            </fieldset>
+
+            <label for="installation-date">Installation Date:</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+
+            <fieldset>
+                <legend>Useful Features:</legend>
+                <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" id="ease-of-use" name="features" value="Ease of Use"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
+            </fieldset>
+
+            <label for="review">Written Review:</label>
+            <textarea id="review" name="review"></textarea>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>©2024 💻 Donald Polidor 💻 Haïti</p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>

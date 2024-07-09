@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header, main, footer {
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label, legend {
+    font-weight: bold;
+}
+
+select, input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rating span {
+    font-size: 1.5rem;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Mobile styles */
+@media (max-width: 799px) {
+    body {
+        padding: 1rem;
+    }
+
+    .rating {
+        flex-direction: column;
+    }
+
+    fieldset label {
+        display: block;
+    }
+}
+
+/* Large screen styles */
+@media (min-width: 800px) {
+    main {
+        max-width: 800px;
+    }
+}
