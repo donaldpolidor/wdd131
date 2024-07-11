@@ -1,53 +1,15 @@
-@media only screen and (max-width: 768px) {
-    .form-container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    input[type="text"],
-    input[type="date"],
-    select,
-    textarea,
-    input[type="submit"] {
-        font-size: 14px;
-    }
-
-    #productRating label {
-        font-size: 18px;
-    }
-
-    .checkbox-group label {
-        font-size: 14px;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
-}
-
 @media only screen and (max-width: 480px) {
-    .form-container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    input[type="text"],
-    input[type="date"],
-    select,
-    textarea,
-    input[type="submit"] {
-        font-size: 12px;
-    }
-
-    #productRating label {
-        font-size: 16px;
+    .checkbox-group {
+        flex-direction: column; /* Afficher les cases à cocher en colonne */
     }
 
     .checkbox-group label {
-        font-size: 12px;
+        margin-left: 0; /* Réinitialiser la marge à gauche */
+        margin-bottom: 5px; /* Ajouter une marge en bas pour espacer les cases à cocher */
+        display: block; /* Afficher chaque case à cocher sur une nouvelle ligne */
     }
 
-    footer p {
-        font-size: 10px;
+    .checkbox-group input[type="checkbox"] {
+        margin-right: 0; /* Réinitialiser la marge à droite */
     }
 }
