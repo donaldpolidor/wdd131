@@ -1,6 +1,27 @@
 @media only screen and (max-width: 768px) {
     .form-container {
         width: 90%;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea,
+    input[type="submit"] {
+        font-size: 14px;
+    }
+
+    #productRating label {
+        font-size: 18px;
+    }
+
+    .checkbox-group label {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
     }
 }
 
@@ -8,5 +29,25 @@
     .form-container {
         width: 100%;
         padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea,
+    input[type="submit"] {
+        font-size: 12px;
+    }
+
+    #productRating label {
+        font-size: 16px;
+    }
+
+    .checkbox-group label {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 10px;
     }
 }
