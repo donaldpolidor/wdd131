@@ -1,4 +1,4 @@
-// Table of product
+// Tableau des produits
 const products = [
     {
         id: 'fc-1888',
@@ -27,6 +27,7 @@ const products = [
     }
 ];
 
+// Fonction pour peupler la liste déroulante des produits
 function populateProducts() {
     const productNameSelect = document.getElementById('productName');
     products.forEach(product => {
@@ -37,27 +38,11 @@ function populateProducts() {
     });
 }
 
+// Fonction pour créer les options de notation dynamiquement
 function createRatingOptions() {
     const productRatingDiv = document.getElementById('productRating');
-    
-    const firstLabel = document.createElement('label');
-    firstLabel.setAttribute('for', 'star1');
-    firstLabel.innerHTML = '☆'; 
 
-    const firstInput = document.createElement('input');
-    firstInput.type = 'radio';
-    firstInput.id = 'star1';
-    firstInput.name = 'productRating';
-    firstInput.value = 1;
-    firstInput.required = true;
-
-    const firstSpan = document.createElement('span');
-    firstSpan.appendChild(firstLabel);
-    firstSpan.appendChild(firstInput);
-
-    productRatingDiv.appendChild(firstSpan);
-
-    for (let i = 2; i <= 5; i++) {
+    for (let i = 1; i <= 5; i++) {
         const label = document.createElement('label');
         label.setAttribute('for', `star${i}`);
         label.innerHTML = '☆'.repeat(i); 
@@ -77,6 +62,7 @@ function createRatingOptions() {
     }
 }
 
+// Fonction pour gérer la soumission du formulaire
 function handleSubmit(event) {
     event.preventDefault();
 
@@ -84,11 +70,11 @@ function handleSubmit(event) {
     reviewsCount++;
     localStorage.setItem('reviewsCount', reviewsCount);
 
-    // Soumission du formulaire
     const form = event.target;
     form.submit();
 }
 
+// Fonction pour afficher la date de dernière modification
 function displayLastModified() {
     const lastModifiedSpan = document.getElementById('lastModified');
     const lastModifiedDate = new Date(document.lastModified);
@@ -96,12 +82,12 @@ function displayLastModified() {
     lastModifiedSpan.textContent = lastModifiedDate.toLocaleDateString('en-US', options);
 }
 
-
+// Événement chargement du document
 document.addEventListener('DOMContentLoaded', function() {
-    populateProducts();
-    createRatingOptions();
-    displayLastModified();
+    populateProducts(); // Appeler la fonction pour peupler la liste déroulante des produits
+    createRatingOptions(); // Appeler la fonction pour créer les options de notation
+    displayLastModified(); // Appeler la fonction pour afficher la date de dernière modification
 
     const form = document.getElementById('productReviewForm');
-    form.addEventListener('submit', handleSubmit);
+    form.addEventListener('submit', handleSubmit); // Écouter l'événement de soumission du formulaire
 });
