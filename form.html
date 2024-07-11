@@ -1,65 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
-    <meta name="description" content="Product Review Form">
+    <meta name="description"
+        content="Product Review Form">
     <meta name="author" content="Donald Polidor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="styles/form-large.css" media="screen and (min-width: 800px)">
+    <link rel="stylesheet" href="styles/form-large.css">
 </head>
-
 <body>
-    <header>
-        <h1>Product Review</h1>
-    </header>
-    <main>
-        <h1>Product Review</h1>
-        <form method="get" action="review.html">
-            <label for="product">Product Name:</label>
-            <select id="product" name="product" required>
-                <option value="" disabled selected>Select a product...</option>
-            </select>
 
-            <fieldset>
-                <legend>Overall Rating:</legend>
-                <div class="rating">
-                    <label><span>★</span><input type="radio" name="rating" value="1" required></label>
-                    <label><span>★★</span><input type="radio" name="rating" value="2" required></label>
-                    <label><span>★★★</span><input type="radio" name="rating" value="3" required></label>
-                    <label><span>★★★★</span><input type="radio" name="rating" value="4" required></label>
-                    <label><span>★★★★★</span><input type="radio" name="rating" value="5" required></label>
+<header>
+    <h1 class="title">Product Review</h1>
+</header>
+
+<main>
+    <div class="form-container">
+        <form id="productReviewForm" action="review.html" method="get">
+            <div class="form-group">
+                <label for="productName">Product Name:</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a product ...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="productRating">Overall Rating:</label>
+                <div id="productRating">
+                    <!-- Options will be dynamically added via JavaScript -->
                 </div>
-            </fieldset>
+            </div>
 
-            <label for="installation-date">Installation Date:</label>
-            <input type="date" id="installation-date" name="installation-date" required>
+            <div class="form-group">
+                <label for="installationDate">Installation Date:</label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </div>
 
-            <fieldset>
-                <legend>Useful Features:</legend>
-                <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
-                <label><input type="checkbox" id="ease-of-use" name="features" value="Ease of Use"> Ease of Use</label>
-                <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
-                <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
-            </fieldset>
+            <div class="form-group">
+                <label>Useful Features:</label><br>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="feature1" name="features" value="Durability">
+                    <label for="feature1">Durability</label>
+                    <input type="checkbox" id="feature2" name="features" value="Ease of use">
+                    <label for="feature2">Ease of use</label>
+                    <input type="checkbox" id="feature3" name="features" value="Performance">
+                    <label for="feature3">Performance</label>
+                    <input type="checkbox" id="feature4" name="features" value="Design">
+                    <label for="feature4">Design</label>
+                </div>
+            </div>
 
-            <label for="review">Written Review:</label>
-            <textarea id="review" name="review"></textarea>
+            <div class="form-group">
+                <label for="review">Written Review:</label> <span class="optional">(Optional)</span><br>
+                <textarea id="review" name="review"></textarea>
+            </div>
 
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username">
+            <div class="form-group">
+                <label for="username">Username:</label> <span class="optional">(Optional)</span>
+                <input type="text" id="username" name="username">
+            </div>
 
-            <input type="submit" value="Submit Review">
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
         </form>
-    </main>
+    </div>
+</main>
 
-    <footer>
-        <p>©2024 💻 Donald Polidor 💻 Haïti</p>
-    </footer>
+<footer>
+    <p>©<span id="currentyear"></span> 💻 <span class="highlight">Donald Polidor</span> 💻 Haïti</p>
+    <p id="lastModified">Last modification: <span class="highlight"></span></p>
+</footer>
 
-    <script src="scripts/form.js"></script>
+<script src="scripts/form.js"></script>
 </body>
-
 </html>
