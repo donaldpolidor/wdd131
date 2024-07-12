@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+        
+h1, h2 {
+    color: #336699; /* Blue for headings */
+}
+        
+p {
+    color: #000000; /* Black for paragraphs */
+    background-color: rgb(224, 222, 222); /* Gray for backgrounds */
+}
+
+.wireframe-image {
+    text-align: center; /* Center align images */
+    margin-bottom: 20px; /* Add bottom margin to images */
+}
