@@ -95,7 +95,7 @@ nav .nav-container {
 
 .biography-box {
     width: 50%; /* Ajustement de la largeur pour une meilleure lisibilité */
-    background-color: rgb(202, 201, 201);
+    /*background-color: rgb(202, 201, 201);*/
     padding: 1rem;
 }
 
