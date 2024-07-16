@@ -35,6 +35,11 @@ nav .nav-container {
     font-size: 4rem;
     font-family: 'DM Serif Text', serif;
     margin-left: 0.1rem;
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    overflow: hidden; /* Cache le texte qui dépasse */
+    text-overflow: ellipsis; /* Affiche "..." lorsque le texte est coupé */
+    flex: 1; /* Pour occuper tout l'espace disponible */
+    text-align: center; /* Centrage du texte */
 }
 
 .nav-menu {
@@ -114,7 +119,7 @@ nav .nav-container {
 
 .profile-photo {
     text-align: center;
-    margin-left: 1rem;
+    margin-left: 0;
     font-weight: bold;
 }
 
