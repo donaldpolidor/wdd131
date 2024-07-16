@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const navMenu = document.querySelector(".nav-menu");
 
     hamburger.addEventListener("click", function() {
-        navMenu.classList.toggle("open");
+        navMenu.classList.toggle("active");
     });
 
     // Set the current year in the footer

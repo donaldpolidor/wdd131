@@ -57,36 +57,7 @@
         border-radius: 5px;
     }
 
-    .profile-photo.small {
-        display: block; /* Affiche la version pour petits écrans */
-    }
-
-    .profile-photo.medium, .profile-photo.large {
-        display: none; /* Cache les versions pour moyens et grands écrans */
-    }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .profile-photo.medium {
-        display: block; /* Affiche la version pour écrans moyens */
-    }
-    .profile-photo.small, .profile-photo.large {
-        display: none; /* Cache les versions pour petits et grands écrans */
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .nav-title {
-        font-size: 3rem; /* Réduire la taille du titre pour les mobiles */
-    }
-}
-
-
-@media only screen and (min-width: 1025px) {
-    .profile-photo.large {
-        display: block; /* Affiche la version pour grands écrans */
-    }
-    .profile-photo.small, .profile-photo.medium {
-        display: none; /* Cache les versions pour petits et moyens écrans */
+    .profile-photo img {
+        width: 90%; /* Ajustement de la taille pour les petits écrans */
     }
 }
