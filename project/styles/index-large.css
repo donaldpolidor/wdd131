@@ -1,46 +1,46 @@
 @media only screen and (max-width: 1024px) {
     .biography-section {
-        flex-direction: column; /* Affichage en colonne sur les écrans moyens */
-        align-items: center; /* Centrage des éléments */
+        flex-direction: column;
+        align-items: center;
     }
 
     .biography-box {
-        width: 90%; /* Largeur ajustée pour les écrans moyens */
+        width: 90%;
     }
 
     .flag-photo img {
-        width: 90%; /* Ajustement de la taille du drapeau pour les écrans moyens */
+        width: 90%;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
-        display: none; /* Cacher le menu de navigation principal */
-        position: absolute; /* Position absolue pour le déroulement */
-        top: 5rem; /* Position par rapport au haut de la page */
-        left: 0; /* Alignement à gauche */
-        background-color: rgb(140, 0, 255); /* Couleur de fond */
-        width: 100%; /* Pleine largeur */
-        text-align: center; /* Centrage du texte */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
-        z-index: 1000; /* Assure que le menu apparaît au-dessus du reste */
+        display: none;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        background-color: rgb(140, 0, 255);
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
     }
 
     .nav-menu.open {
-        display: flex; /* Affichage lorsque le menu est ouvert */
-        flex-direction: column; /* Affichage en colonne pour les éléments de menu */
+        display: flex;
+        flex-direction: column;
     }
 
     .nav-menu li {
-        margin-bottom: 1rem; /* Espacement entre les éléments de menu */
+        margin-bottom: 1rem;
     }
 
     .hamburger {
-        display: block; /* Afficher le hamburger */
+        display: block;
     }
 
     .nav-container {
-        position: relative; /* Position relative pour contenir le menu */
+        position: relative;
     }
 
     .nav-menu li a {
@@ -48,7 +48,7 @@
         text-decoration: none;
         font-weight: 600;
         padding: 0.5rem 1rem;
-        display: block; /* Affichage en bloc pour les liens */
+        display: block;
         transition: background-color 0.3s ease;
     }
 
@@ -58,6 +58,6 @@
     }
 
     .profile-photo img {
-        width: 90%; /* Ajustement de la taille pour les petits écrans */
+        width: 90%;
     }
 }
