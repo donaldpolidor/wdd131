@@ -1,0 +1,162 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(233, 233, 233);
+}
+
+/* Navigation Bar Styles */
+header {
+    width: 100%;
+    background-color: rgb(140, 0, 255);
+    color: white;
+}
+
+nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 5rem;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    margin: auto;
+}
+
+.nav-title {
+    font-size: 4rem;
+    font-family: 'DM Serif Text', serif;
+    margin-left: 0.1rem;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    margin-right: 3rem;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.container {
+    background-color: white;
+    padding: 0.1rem;
+}
+
+.container h2 {
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Biography Section */
+.biography-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.biography-box {
+    width: 50%; /* Ajustement de la largeur pour une meilleure lisibilité */
+    background-color: rgb(202, 201, 201);
+    padding: 1rem;
+}
+
+.biography-box h1 {
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgb(140, 0, 255);
+    color: white;
+}
+
+.biography-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.profile-photo {
+    text-align: center;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.profile-photo img {
+    width: 290px;
+    height: auto;
+    margin-bottom: 0.5rem;
+    display: none; /* Par défaut, toutes les images sont cachées */
+}
+
+.flag-photo {
+    text-align: center;
+    margin-top: 1rem; /* Espacement ajouté */
+}
+
+.flag-photo img {
+    display: block; /* Affichage en bloc pour centrer correctement */
+    margin: auto; /* Centrage horizontal */
+    width: 285px;
+}
+
+.flag-photo p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: white;
+    background-color: rgb(104, 104, 104);
+}
+
+footer p {
+    color: white;
+}
+
+.highlight {
+    font-weight: bold;
+    color: white; 
+}
+
+

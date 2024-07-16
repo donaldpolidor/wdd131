@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temples photo album - Donald Polidor</title>
+    <meta name="description" content="WDD 131 - Temples photo album - Donald Polidor">
+    <meta name="author" content="Donald Polidor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo-dgraffiti.jpg" alt="logo D.GRAFFITI">
+                </div>
+                <div class="nav-title">D.GRAFFITI</div>
+                <ul class="nav-menu">
+                    <li><a href="#" data-filter="home">Home</a></li>
+                    <li><a href="#" data-filter="gallery">Gallery</a></li>
+                    <li><a href="#" data-filter="3d-model">3D Model</a></li>
+                    <li><a href="#" data-filter="calligraphy">Calligraphy</a></li>
+                    <li><a href="#" data-filter="print">Print</a></li>
+                    <li><a href="#" data-filter="digital-art">Digital Art</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>WELCOME TO THE DONALD GRAFFITI WEB SITE.</h1>
+            <h2>It's a pleasure to welcome you on our website, just before browsing we offer you a summary
+                of the artist's biography to better know his origin and his different paths during his 
+                evolution through the field of art before exploring his different works of art.</h2>
+        </div>
+
+        <!-- Biography Section -->
+        <div class="biography-section">
+            <div class="biography-box">
+                <h1>BIOGRAPHY</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
+                </p>
+            </div>
+            <div class="profile-photo">
+                <img src="images/profil-s.webp" alt="Donald Polidor" class="profile-photo small">
+                <img src="images/profil-m.webp" alt="Donald Polidor" class="profile-photo medium">
+                <img src="images/profil-l.webp" alt="Donald Polidor" class="profile-photo large">
+                <p>Donald Polidor (D.Graffiti)</p>
+                <div class="flag-photo">
+                    <img src="images/flag.jpg" alt="Haiti Flag">
+                    <p>HAITI</p>
+                </div>
+            </div>
+        </div>
+        <section class="gallery" id="gallery"></section>
+    </main>
+    
+    <footer>
+        <p>©<span id="currentyear"></span> 💻 <span class="highlight">Donald Polidor</span> 💻 Haïti</p>
+        <p id="lastModified">Last modification: <span class="highlight"></span></p>
+    </footer>
+
+    <script defer src="scripts/index.js"></script>
+</body>
+</html>
