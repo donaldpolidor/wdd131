@@ -1,25 +1,15 @@
-@media only screen and (min-width: 1025px) {
-    .profile-photo.large {
-        display: block; /* Affiche la version pour grands écrans */
+@media only screen and (max-width: 1024px) {
+    .biography-section {
+        flex-direction: column; /* Affichage en colonne sur les écrans moyens */
+        align-items: center; /* Centrage des éléments */
     }
-    .profile-photo.small, .profile-photo.medium {
-        display: none; /* Cache les versions pour petits et moyens écrans */
-    }
-}
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .profile-photo.medium {
-        display: block; /* Affiche la version pour écrans moyens */
+    .biography-box {
+        width: 90%; /* Largeur ajustée pour les écrans moyens */
     }
-    .profile-photo.small, .profile-photo.large {
-        display: none; /* Cache les versions pour petits et grands écrans */
-    }
-}
 
-@media only screen and (max-width: 768px) {
-    .profile-photo img {
+    .flag-photo img {
         width: 90%; /* Ajustement de la taille du drapeau pour les écrans moyens */
-        margin: 0 auto; /* Centrage horizontal */
     }
 }
 
@@ -74,8 +64,29 @@
     .profile-photo.medium, .profile-photo.large {
         display: none; /* Cache les versions pour moyens et grands écrans */
     }
+}
 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .profile-photo.medium {
+        display: block; /* Affiche la version pour écrans moyens */
+    }
+    .profile-photo.small, .profile-photo.large {
+        display: none; /* Cache les versions pour petits et grands écrans */
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .nav-title {
         font-size: 3rem; /* Réduire la taille du titre pour les mobiles */
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    .profile-photo.large {
+        display: block; /* Affiche la version pour grands écrans */
+    }
+    .profile-photo.small, .profile-photo.medium {
+        display: none; /* Cache les versions pour petits et moyens écrans */
     }
 }

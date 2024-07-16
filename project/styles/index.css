@@ -140,6 +140,11 @@ nav .nav-container {
     width: 285px;
 }
 
+.flag-photo p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 /* Footer Styles */
 footer {
     text-align: center;
@@ -157,3 +162,5 @@ footer p {
     font-weight: bold;
     color: white; 
 }
+
+
