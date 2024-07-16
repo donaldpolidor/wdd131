@@ -156,4 +156,19 @@ footer p {
     color: white; 
 }
 
+/* Styles pour les liens des réseaux sociaux dans le pied de page */
+.social-icons {
+    margin-top: 1rem; /* Ajoute un espace au-dessus des icônes */
+}
+
+.social-icons a {
+    margin-right: 10px; /* Espacement horizontal entre les icônes */
+}
+
+.social-icons img {
+    vertical-align: middle; /* Ajuste l'alignement vertical des icônes */
+    width: 20px;
+}
+
+
 
