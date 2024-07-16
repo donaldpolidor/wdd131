@@ -1,3 +1,4 @@
+/* Media queries pour différentes tailles d'écran */
 @media only screen and (max-width: 1024px) {
     .biography-section {
         flex-direction: column;
@@ -32,7 +33,6 @@
         }
     }
     
-
     .nav-menu.open {
         display: flex;
         flex-direction: column;
@@ -64,7 +64,12 @@
         border-radius: 5px;
     }
 
-    .profile-photo img {
+    .profil-photo img {
         width: 90%;
     }
+
+    .flag-photo img {
+        width: 90%; /* Ajustement pour les petits écrans */
+    }
 }
+
