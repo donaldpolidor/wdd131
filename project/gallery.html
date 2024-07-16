@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - website Art - Donald Polidor</title>
+    <meta name="description" content="WDD 131 - website Art - Donald Polidor">
+    <meta name="author" content="Donald Polidor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo-dgraffiti.jpg" alt="logo D.GRAFFITI">
+                </div>
+                <div class="nav-title">D.GRAFFITI</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-filter="home">Home</a></li>
+                    <li><a href="gallery.html" data-filter="gallery">Gallery</a></li>
+                    <li><a href="#" data-filter="3d-model">3D Model</a></li>
+                    <li><a href="#" data-filter="calligraphy">Calligraphy</a></li>
+                    <li><a href="#" data-filter="print">Print</a></li>
+                    <li><a href="#" data-filter="digital-art">Digital Art</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>WELCOME TO THE DONALD GRAFFITI WEB SITE.</h1>
+            <h2>A portrait gallery is a captivating space where human faces and expressions come to life through art. Each painting tells a unique story, capturing the essence and personality of the subjects depicted. From classic portraits to contemporary interpretations, these works offer a fascinating exploration of human diversity and the art of representation. A portrait gallery is a place where intimacy and emotion meet, inviting viewers to contemplate not only physical features, but also the feelings and stories behind each gaze frozen in time.</h2>
+        </div>
+        <div class="title-gallery">
+            <h1>Gallery of pencil portrait</h1>
+        </div>
+        <div class="image-grid">
+            <div class="image-container">
+                <img src="images/profil-l.webp" alt="Portrait 1" width="250">
+                <div class="like-counter">
+                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/profil-l.webp" alt="Portrait 2" width="250">
+                <div class="like-counter">
+                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/profil-l.webp" alt="Portrait 3" width="250">
+                <div class="like-counter">
+                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/profil-l.webp" alt="Portrait 4" width="250">
+                <div class="like-counter">
+                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 💻 <span class="highlight">Donald Polidor</span> 💻 Haïti</p>
+        <p id="lastModified">Last modification: <span class="highlight"></span></p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/donaldgraffiti?igsh=MTdzbnM5N3VzcGh5cg==" target="_blank"><img
+                    src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/donal.polidor?mibextid=ZbWKwL" target="_blank"><img
+                    src="images/Facebook.webp" alt="Facebook"></a>
+            <a href="https://x.com/GraffitiDonald?t=G3odicqso5xDLiuBUDtZ4w&s=09" target="_blank"><img
+                    src="images/X_logo.png" alt="X"></a>
+            <a href="https://www.threads.net/@donaldgraffiti" target="_blank"><img src="images/threads-logo.png"
+                    alt="Threads"></a>
+        </div>
+    </footer>
+
+    <script defer src="scripts/index.js"></script>
+</body>
+
+</html>

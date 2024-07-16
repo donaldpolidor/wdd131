@@ -1,29 +1,23 @@
+// JavaScript for both index.html and gallery.html
+
 document.addEventListener("DOMContentLoaded", function() {
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.querySelector(".nav-menu");
+    // Set current year in footer
+    document.getElementById('currentyear').innerText = new Date().getFullYear();
 
-    hamburger.addEventListener("click", function() {
-        navMenu.classList.toggle("open");
-    });
+    // Set last modification date in footer
+    document.getElementById('lastModified').getElementsByTagName('span')[0].innerText = document.lastModified;
 
-    // Set the current year in the footer
-    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.querySelector('.nav-menu');
 
-    // Set the last modified date in the footer
-    document.getElementById("lastModified").querySelector(".highlight").textContent = document.lastModified;
-
-    // Function to handle filtering logic (sample function, adjust as needed)
-    function filterContent(criteria) {
-        // Placeholder function to handle filtering content
-        console.log(`Filtering content based on: ${criteria}`);
-    }
-
-    // Event listeners for nav menu links (sample, adjust for your needs)
-    document.querySelectorAll(".nav-menu a").forEach(link => {
-        link.addEventListener("click", function(event) {
-            event.preventDefault();
-            const filterCriteria = this.getAttribute("data-filter");
-            filterContent(filterCriteria);
-        });
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
     });
 });
+
+// Function to increment likes count
+function incrementLikes(button) {
+    const likesCount = button.nextElementSibling;
+    likesCount.textContent = parseInt(likesCount.textContent) + 1;
+}
