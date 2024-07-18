@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - website Art - Page Gallery - Donald Polidor</title>
-    <meta name="description" content="WDD 131 - website Art - Page Gallery - Donald Polidor">
+    <title>WDD 131 - website Art - Page Print - Donald Polidor</title>
+    <meta name="description" content="WDD 131 - website Art - Page Print - Donald Polidor">
     <meta name="author" content="Donald Polidor">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,178 +42,180 @@
 
     <main>
         <div class="container">
-            <h1>GALLERY</h1>
-            <p>A portrait gallery is a captivating space where human faces and expressions come to life through art.
-                Each painting tells a unique story, capturing the essence and personality of the subjects depicted. From
-                classic portraits to contemporary interpretations, these works offer a fascinating exploration of human
-                diversity and the art of representation. A portrait gallery is a place where intimacy and emotion meet,
-                inviting viewers to contemplate not only physical features, but also the feelings and stories behind
-                each gaze frozen in time.</p>
+            <h1>DIGITAL ART</h1>
+            <p>Digital art opens up an infinite universe of creativity, where artists explore the fusion between
+                technology and artistic expression. Using advanced 3D and vector creation tools, they transform abstract
+                ideas into tangible, immersive forms. 3D modeling enables objects and environments to be virtually
+                sculpted with astonishing precision, offering artistic freedom without physical limits. Meanwhile,
+                vector illustrations captivate with their sharpness and flexibility, ideal for creating logos, icons and
+                illustrations that can be resized without loss of quality. These revolutionary techniques are redefining
+                the boundaries of contemporary art, giving designers room to experiment and innovate in an endless
+                digital palette.</p>
         </div>
         <div class="title-gallery">
-            <h1>Gallery of pencil portrait</h1>
+            <h1>Digital Art gallery</h1>
         </div>
         <div class="image-grid">
             <div class="image-container">
-                <img src="images/table-1.jpg" alt="Portrait 1">
+                <img src="images/cup.jpg" alt="cup">
+                <div class="like-counter">
+                    <p>Mode: 3D</p>
+                    <p>Glass of orange juice</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/logo1.jpg" alt="logo">
+                <div class="like-counter">
+                    <p>Logo</p>
+                    <p>(UCT) City of Technology Universe</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/logo2.jpg" alt="logo">
+                <div class="like-counter">
+                    <p>Logo</p>
+                    <p>DJ SALAM</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/logo3.jpg" alt="logo">
+                <div class="like-counter">
+                    <p>Logo</p>
+                    <p>ARCA Distribution</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/logo4.jpg" alt="logo">
+                <div class="like-counter">
+                    <p>Logo</p>
+                    <p>D_Lau's Store</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/mousse.jpg" alt="mousse">
+                <div class="like-counter">
+                    <p>Model: 3D</p>
+                    <p>Foam</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+
+            <!--<div class="image-container">
+                <img src="images/ts7.jpg" alt="T-shirt 7">
+                <div class="like-counter">
+                    <p>SIZE: S . M . L</p>
+                    <p>Price: 1,500.00 HTG</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/ts8.jpg" alt="T-shirt 8">
+                <div class="like-counter">
+                    <p>SIZE: S . M . L</p>
+                    <p>Price: 1,500.00 HTG</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/ts9.jpg" alt="T-shirt 9">
+                <div class="like-counter">
+                    <p>SIZE: S . M . L</p>
+                    <p>Price: 1,750.00 HTG</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/ts10.jpg" alt="T-shirt 10">
+                <div class="like-counter">
+                    <p>SIZE: S . M . L</p>
+                    <p>Price: 1,750.00 HTG</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
+                    <span class="likes-count">0</span>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/ts11.png" alt="T-shirt 11">
                 <div class="like-counter">
                     <p>Portrait painting 12"x 16" Inches.</p>
                     <p>Price: 8,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
                     <span class="likes-count">0</span>
                 </div>
             </div>
 
             <div class="image-container">
-                <img src="images/table-2.jpg" alt="Portrait 2">
+                <img src="images/ts12.png" alt="T-shirt 12">
                 <div class="like-counter">
-                    <p>Portrait painting 10"x 12" Inches.</p>
-                    <p>Price: 5,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
+                    <p>SIZE: S . M . L</p>
+                    <p>Price: 1,500.00 HTG</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
                     <span class="likes-count">0</span>
                 </div>
             </div>
 
             <div class="image-container">
-                <img src="images/table-3.jpg" alt="Portrait 3">
+                <img src="images/ts13.png" alt="T-shirt 13">
                 <div class="like-counter">
-                    <p>Portrait painting 16"x 20" Inches.</p>
-                    <p>Price: 9,500.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
+                    <p>SIZE: S . M . L</p>
+                    <p>Price: 1,500.00 HTG</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
                     <span class="likes-count">0</span>
                 </div>
             </div>
 
             <div class="image-container">
-                <img src="images/table-4.jpg" alt="Portrait 4">
+                <img src="images/ts14.png" alt="T-shirt 14">
                 <div class="like-counter">
-                    <p>Portrait painting 10"x 12" Inches.</p>
-                    <p>Price: 10,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
+                    <p>SIZE: S . M . L</p>
+                    <p>Price: 1,500.00 HTG</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
                     <span class="likes-count">0</span>
                 </div>
             </div>
 
             <div class="image-container">
-                <img src="images/table-5.jpg" alt="Portrait 5">
+                <img src="images/ts15.png" alt="T-shirt 15">
                 <div class="like-counter">
-                    <p>Portrait painting 10"x 12" Inches.</p>
-                    <p>Price: 5,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
+                    <p>SIZE: S . M . L</p>
+                    <p>Price: 1,500.00 HTG</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
                     <span class="likes-count">0</span>
                 </div>
             </div>
 
             <div class="image-container">
-                <img src="images/table-6.jpg" alt="Portrait 6">
+                <img src="images/ts16.png" alt="T-shirt 16">
                 <div class="like-counter">
-                    <p>Portrait painting 12"x 16" Inches.</p>
-                    <p>Price: 8,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
+                    <p>SIZE: S . M . L</p>
+                    <p>Price: 1,750.00 HTG</p>
+                    <button class="like-btn" onclick="incrementLikes(this)">👍</button>
                     <span class="likes-count">0</span>
                 </div>
             </div>
-
-            <div class="image-container">
-                <img src="images/table-7.jpg" alt="Portrait 7">
-                <div class="like-counter">
-                    <p>Portrait painting 10"x 12" Inches.</p>
-                    <p>Price: 5,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
-                    <span class="likes-count">0</span>
-                </div>
-            </div>
-
-            <div class="image-container">
-                <img src="images/table-8.jpg" alt="Portrait 8">
-                <div class="like-counter">
-                    <p>Portrait painting 12"x 16" Inches.</p>
-                    <p>Price: 8,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
-                    <span class="likes-count">0</span>
-                </div>
-            </div>
-
-            <div class="image-container">
-                <img src="images/table-9.jpg" alt="Portrait 9">
-                <div class="like-counter">
-                    <p>Portrait painting 10"x 12" Inches.</p>
-                    <p>Price: 5,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
-                    <span class="likes-count">0</span>
-                </div>
-            </div>
-
-            <div class="image-container">
-                <img src="images/table-10.jpg" alt="Portrait 10">
-                <div class="like-counter">
-                    <p>Portrait painting: 16"x 20" Inches.</p>
-                    <p>Price: 9,500.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
-                    <span class="likes-count">0</span>
-                </div>
-            </div>
-
-            <div class="image-container">
-                <img src="images/table-11.jpg" alt="Portrait 11">
-                <div class="like-counter">
-                    <p>Portrait painting 12"x 16" Inches.</p>
-                    <p>Price: 8,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
-                    <span class="likes-count">0</span>
-                </div>
-            </div>
-
-            <div class="image-container">
-                <img src="images/table-12.jpg" alt="Portrait 12">
-                <div class="like-counter">
-                    <p>Portrait painting 12"x 16" Inches.</p>
-                    <p>Price: 8,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
-                    <span class="likes-count">0</span>
-                </div>
-            </div>
-
-            <div class="image-container">
-                <img src="images/table-13.jpg" alt="Portrait 13">
-                <div class="like-counter">
-                    <p>Portrait painting 10"x 12" Inches.</p>
-                    <p>Price: 5,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
-                    <span class="likes-count">0</span>
-                </div>
-            </div>
-
-            <div class="image-container">
-                <img src="images/table-14.jpg" alt="Portrait 14">
-                <div class="like-counter">
-                    <p>Portrait painting 10"x 12" Inches.</p>
-                    <p>Price: 5,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
-                    <span class="likes-count">0</span>
-                </div>
-            </div>
-
-            <div class="image-container">
-                <img src="images/table-15.jpg" alt="Portrait 15">
-                <div class="like-counter">
-                    <p>Portrait painting 10"x 12" Inches.</p>
-                    <p>Price: 5,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
-                    <span class="likes-count">0</span>
-                </div>
-            </div>
-
-            <div class="image-container">
-                <img src="images/table-16.jpg" alt="Portrait 16">
-                <div class="like-counter">
-                    <p>Portrait painting 12"x 16" Inches.</p>
-                    <p>Price: 8,000.00 HTG</p>
-                    <button class="like-btn" onclick="incrementLikes(this)">❤️</button>
-                    <span class="likes-count">0</span>
-                </div>
-            </div>
-        </div>
+        </div>-->
     </main>
 
     <footer>
