@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Permanent+Marker&display=swap');
+
 /* Reset some basic elements */
 * {
     margin: 0;
@@ -6,7 +9,7 @@
 }
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Chakra Petch', serif;
     background-color: rgb(233, 233, 233);
 }
 
@@ -28,17 +31,17 @@ nav .nav-container {
 .logo img {
     width: 70px;
     height: auto;
-    margin: auto;
+    margin:0;
     border-radius: 50px;
 }
 
 .nav-title {
     font-size: 2.5rem;
-    font-family: 'DM Serif Text', serif;
+    font-family: 'Black Ops One', serif;
     margin-left: 0.1rem;
     white-space: nowrap;
     text-overflow: ellipsis;
-    flex: 0.5; /* Ajustez la flexibilité pour rapprocher du logo */
+    flex: 0.1; /* Ajustez la flexibilité pour rapprocher du logo */
     text-align: center;
 }
 
@@ -65,7 +68,7 @@ nav .nav-container {
 
 .hamburger {
     display: none;
-    font-size: 2rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -86,8 +89,8 @@ nav .nav-container {
     font-size: 1.3rem;
     color: rgb(0, 0, 0);
     margin-bottom: 2rem;
-    text-align: center;
-    margin: 10px;
+    text-align: justify;
+    margin: 20px;
 }
 
 .biography-section {
@@ -113,12 +116,18 @@ nav .nav-container {
     font-size: 1rem;
     line-height: 1.6;
     text-align: justify;
+    margin-bottom: 1.1rem; /* Ajout d'espace entre les paragraphes */
 }
+
 
 .profil-photo {
     text-align: center;
     margin-top: 1rem;
     font-weight: bold;
+}
+
+.profil-photo p{
+    margin: 1.1rem;
 }
 
 .profil-photo img {
@@ -157,12 +166,13 @@ nav .nav-container {
 }
 
 .image-container {
-    text-align: center;
+    text-align: left;
+    font-size: 15px;
     width: 250px; /* Largeur individuelle des images */
     padding: 10px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.459);
 }
 
 .image-container img {
@@ -172,31 +182,43 @@ nav .nav-container {
 
 .like-counter {
     margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-.like-btn {
-    background-color: white;
+.like-counter p {
+    margin-bottom: 1px;
+}
+
+.like-counter .like-btn {
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
     outline: none;
+    margin-top: 2px;
+    background-color: white;
 }
 
-.likes-count {
+.like-counter .likes-count {
     margin-left: 5px;
     font-size: 1rem;
 }
 
 /* Footer Styles */
 footer {
+    margin-top: 2rem;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
     color: white;
     background-color: rgb(104, 104, 104);
+}
+
+.contact p{
+    text-align: center;
 }
 
 footer p {
@@ -222,58 +244,3 @@ footer p {
     width: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-    .nav-menu {
-        display: none;
-        position: absolute;
-        top: 5rem;
-        left: 0;
-        background-color: rgb(140, 0, 255);
-        width: 100%;
-        text-align: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-    }
-
-    @media only screen and (min-width: 768px) {
-        .nav-title {
-            font-size: 1rem; /* Réduire la taille du titre pour les mobiles */
-        }
-    }
-    
-
-    .nav-menu.open {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .nav-menu li {
-        margin-bottom: 1rem;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .nav-container {
-        position: relative;
-    }
-
-    .nav-menu li a {
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
-        padding: 0.5rem 1rem;
-        display: block;
-        transition: background-color 0.3s ease;
-    }
-
-    .nav-menu li a:hover {
-        background-color: rgb(0, 0, 0);
-        border-radius: 5px;
-    }
-
-    .profile-photo img {
-        width: 90%;
-    }
-}

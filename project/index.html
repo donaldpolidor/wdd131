@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,17 @@
     <meta name="author" content="Donald Polidor">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link
+        href="<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-large.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -38,7 +45,7 @@
         <div class="container">
             <h1>WELCOME TO THE DONALD GRAFFITI WEB SITE.</h1>
             <h2>It's a pleasure to welcome you on our website, just before browsing we offer you a summary
-                of the artist's biography to better know his origin and his different paths during his 
+                of the artist's biography to better know his origin and his different paths during his
                 evolution through the field of art before exploring his different works of art.</h2>
         </div>
 
@@ -46,21 +53,35 @@
         <div class="biography-section">
             <div class="biography-box">
                 <h1>BIOGRAPHY</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vestibulum.
+                <p>Donald Polidor, known by his artist name Donald Graffiti, was born in Port-au-Prince, Haiti, and grew
+                    up in a residential area of the capital where he still resides today. From the age of 7, he had a
+                    deep love of art and never stopped drawing, his passion already ingrained in him.
                 </p>
+                <p>After completing his secondary education at three different schools and passing his Baccalaureate II,
+                    he went on to study computer science at a vocational school, where he devoted himself devoutly until
+                    graduation. He subsequently landed his first job and is currently continuing his online studies at
+                    Brigham Young University (BYU) in the USA, preparing to obtain a Bachelor's degree in web
+                    programming.</p>
+                <p>Despite all those years of study, he never stopped drawing, seeing it as a refuge. He liked to show
+                    his creations to his friends to get their impressions. As time went by and he progressed in the
+                    field, he had the opportunity to meet Lesly Jean Baptiste NOULA, a great local artist, known for his
+                    diversified practice including painting, theater, dance, slam and sculpture. This meeting was
+                    pivotal, with Lesly Jean Baptiste becoming a mentor and father figure to Donald, helping him to
+                    further hone his craft. </p>
+                <p>For several years, between 2011 and 2016, Donald also practiced theater, participating in various
+                    cultural activities. In 2021, with the support of his mentor Lesly Jean Baptiste NOULA and another
+                    artist, he planned and worked intensively for eight months to organize a major exhibition of pencil
+                    portraits. The initiative proved a great success and enriched his artistic experience.
+                    and is currently teaching drawing techniques at a vocational school in the capital.</p>
+                <p>Donald continues to evolve in the field of art, producing numerous works in his own
+                    home studio, which also bears his artist's name, "DONALD GRAFFITI".</p>
             </div>
             <div class="profil-photo">
-                <img src="images/profil-s.webp" alt="profil photo">
+                <picture>
+                    <source srcset="images/profil-l.webp" media="(min-width: 1000px)">
+                    <source srcset="images/profil-s.webp" media="(min-width: 600px)">
+                    <img src="images/profil-s.webp" alt="profil photo">
+                </picture>
                 <p>Donald Polidor (D.Graffiti)</p>
                 <div class="flag-photo">
                     <img src="images/flag.jpg" alt="Haiti Flag">
@@ -70,18 +91,28 @@
         </div>
         <section class="gallery" id="gallery"></section>
     </main>
-    
+
     <footer>
         <p>©<span id="currentyear"></span> 💻 <span class="highlight">Donald Polidor</span> 💻 Haïti</p>
         <p id="lastModified">Last modification: <span class="highlight"></span></p>
+        <div class="contact">
+            <p>☎ +(509) 4428-7832 / 3210-3217</p>
+            <p>✉ donaldpolidor30@gmail.com</p>
+            <p>📍Port-au-Prince (Haïti), 38 Pacot ,Garoute street.</p>
+        </div>
         <div class="social-icons">
-            <a href="https://www.instagram.com/donaldgraffiti?igsh=MTdzbnM5N3VzcGh5cg==" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/donal.polidor?mibextid=ZbWKwL" target="_blank"><img src="images/Facebook.webp" alt="Facebook"></a>
-            <a href="https://x.com/GraffitiDonald?t=G3odicqso5xDLiuBUDtZ4w&s=09" target="_blank"><img src="images/X_logo.png" alt="X"></a>
-            <a href="https://www.threads.net/@donaldgraffiti" target="_blank"><img src="images/threads-logo.png" alt="Threads"></a>
+            <a href="https://www.instagram.com/donaldgraffiti?igsh=MTdzbnM5N3VzcGh5cg==" target="_blank"><img
+                    src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/donal.polidor?mibextid=ZbWKwL" target="_blank"><img
+                    src="images/Facebook.webp" alt="Facebook"></a>
+            <a href="https://x.com/GraffitiDonald?t=G3odicqso5xDLiuBUDtZ4w&s=09" target="_blank"><img
+                    src="images/X_logo.png" alt="X"></a>
+            <a href="https://www.threads.net/@donaldgraffiti" target="_blank"><img src="images/threads-logo.png"
+                    alt="Threads"></a>
         </div>
     </footer>
 
     <script defer src="scripts/index.js"></script>
 </body>
+
 </html>
