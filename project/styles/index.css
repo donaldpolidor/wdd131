@@ -38,7 +38,7 @@ nav .nav-container {
     margin-left: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
-    flex: 0.1; /* Ajustez la flexibilité pour rapprocher du logo */
+    flex: 0.1;
     text-align: left;
 }
 
@@ -82,7 +82,7 @@ nav .nav-container {
     padding: 0.1rem;
 }
 
-.container h2 {
+.container p {
     font-size: 1.3rem;
     color: rgb(0, 0, 0);
     margin-bottom: 2rem;
@@ -113,7 +113,7 @@ nav .nav-container {
     font-size: 1rem;
     line-height: 1.6;
     text-align: justify;
-    margin-bottom: 1.1rem; /* Ajout d'espace entre les paragraphes */
+    margin-bottom: 1.1rem;
 }
 
 
@@ -137,13 +137,13 @@ nav .nav-container {
     text-align: center;
     margin-top: 1rem;
     font-weight: bold;
-    margin-bottom: 1rem; /* Espacement sous la photo profil */
+    margin-bottom: 1rem;
 }
 
 .flag-photo img {
     display: block;
     margin: auto;
-    width: 285px; /* Taille du drapeau */
+    width: 285px; 
 }
 
 .title-gallery {
@@ -165,7 +165,7 @@ nav .nav-container {
 .image-container {
     text-align: left;
     font-size: 15px;
-    width: 250px; /* Largeur individuelle des images */
+    width: 280px;
     padding: 10px;
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
@@ -173,7 +173,7 @@ nav .nav-container {
 }
 
 .image-container img {
-    width: 100%; /* Assure que l'image remplit son conteneur */
+    width: 100%; 
     border-radius: 8px;
 }
 
@@ -203,6 +203,18 @@ nav .nav-container {
     margin-left: 5px;
     font-size: 1rem;
 }
+
+.Model1 {
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    border-top: 1px solid black;
+    width: 100%;
+    color: rgb(140, 0, 255);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
 
 /* Footer Styles */
 footer {
