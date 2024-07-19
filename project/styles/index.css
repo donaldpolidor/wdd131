@@ -260,12 +260,12 @@ footer p {
     padding: 20px;
     margin-top: 1rem;
     background-color: white;
-    text-align: center; /* Ajout pour centrer les éléments à l'intérieur */
+    text-align: center; 
 }
 
 .container-form h1 {
     font-size: 1.5rem;
-    margin-bottom: 15px; /* Espacement entre le titre et les étoiles */
+    margin-bottom: 15px; 
 }
 
 .form-group {
@@ -274,7 +274,7 @@ footer p {
 }
 
 .form-group.radio-group {
-    text-align: left; /* Alignement du texte à gauche */
+    text-align: left; 
     font-size: 15px;
 }
 
@@ -309,7 +309,7 @@ select, input, textarea {
 }
 
 button {
-    margin-top: 15px; /* Espacement par rapport aux éléments précédents */
+    margin-top: 15px; 
     padding: 10px 20px;
     background-color: rgb(140, 0, 255);
     color: white;
@@ -317,7 +317,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 1rem;
-    display: inline-block; /* Assure que le bouton se centre correctement */
+    display: inline-block; 
 }
 
 button:hover {
@@ -326,8 +326,8 @@ button:hover {
 
 .rating {
     display: flex;
-    justify-content: center; /* Centrer les étoiles horizontalement */
-    margin-top: 10px; /* Espacement par rapport au titre */
+    justify-content: center; 
+    margin-top: 10px; 
 }
 
 .rating span {
@@ -338,5 +338,5 @@ button:hover {
 
 .rating span:hover,
 .rating span.active {
-    color: gold;
+    color: rgb(140, 0, 255);
 }

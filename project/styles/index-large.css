@@ -28,7 +28,7 @@
 
     @media only screen and (min-width: 768px) {
         .nav-title {
-            font-size: 1rem; /* Réduire la taille du titre pour les mobiles */
+            font-size: 1rem; 
         }
     }
     
@@ -71,11 +71,19 @@
 
 @media only screen and (min-width: 769px) {
     .form-group.radio-group .radio-options {
-        flex-direction: row; /* Alignement en ligne pour les grands écrans */
-        align-items: center; /* Centrage vertical des éléments */
+        flex-direction: row; 
+        align-items: center; 
     }
 
     .form-group.radio-group label {
-        margin-right: 10px; /* Espacement entre les labels */
+        margin-right: 10px; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container-form {
+        width: 90%; 
+        max-width: 600px; 
+        margin: auto; 
     }
 }
