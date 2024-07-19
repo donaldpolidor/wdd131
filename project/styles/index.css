@@ -263,8 +263,9 @@ footer p {
     text-align: center; /* Ajout pour centrer les éléments à l'intérieur */
 }
 
-.container-form h1{
+.container-form h1 {
     font-size: 1.5rem;
+    margin-bottom: 15px; /* Espacement entre le titre et les étoiles */
 }
 
 .form-group {
@@ -290,8 +291,6 @@ footer p {
     display: flex;
     flex-direction: column;
 }
-
-
 
 
 label {
@@ -327,6 +326,8 @@ button:hover {
 
 .rating {
     display: flex;
+    justify-content: center; /* Centrer les étoiles horizontalement */
+    margin-top: 10px; /* Espacement par rapport au titre */
 }
 
 .rating span {
