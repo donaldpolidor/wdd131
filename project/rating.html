@@ -1,0 +1,127 @@
+<!-- rating.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - website Art - Page Rating - Donald Polidor</title>
+    <meta name="description" content="WDD 131 - website Art - Page Rating - Donald Polidor">
+    <meta name="author" content="Donald Polidor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <nav>
+                <div class="nav-container">
+                    <div class="logo">
+                        <img src="images/logo-dgraffiti.jpg" alt="logo D.GRAFFITI">
+                    </div>
+                    <div class="nav-title">D.GRAFFITI</div>
+                    <ul class="nav-menu">
+                        <li><a href="index.html" data-filter="home">Home</a></li>
+                        <li><a href="gallery.html" data-filter="gallery">Gallery</a></li>
+                        <li><a href="model.html" data-filter="3d-model">3D Model</a></li>
+                        <li><a href="calligraphy.html" data-filter="calligraphy">Calligraphy</a></li>
+                        <li><a href="print.html" data-filter="print">Print</a></li>
+                        <li><a href="digital.html" data-filter="digital-art">Digital Art</a></li>
+                        <li><a href="rating.html" data-filter="Rating">Rating</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">&#9776;</div>
+                </div>
+            </nav>        </nav>
+    </header>
+
+    <main>
+        <div class="container-form">
+            <h1>Rating and Feedback</h1>
+            <form id="ratingForm">
+                <div class="form-group">
+                    <label for="pageChoice">Page to Evaluate</label>
+                    <select id="pageChoice" name="pageChoice" required>
+                        <option value="" selected disabled>Select Page</option>
+                        <option value="home">Home</option>
+                        <option value="gallery">Gallery</option>
+                        <option value="3d-model">3D Model</option>
+                        <option value="calligraphy">Calligraphy</option>
+                        <option value="print">Print</option>
+                        <option value="digital-art">Digital Art</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ratingStars">Rating (out of 5 stars)</label>
+                    <div id="ratingStars" class="rating">
+                        <span data-value="1">&#9733;</span>
+                        <span data-value="2">&#9733;</span>
+                        <span data-value="3">&#9733;</span>
+                        <span data-value="4">&#9733;</span>
+                        <span data-value="5">&#9733;</span>
+                    </div>
+                    <input type="hidden" id="ratingValue" name="ratingValue">
+                </div>
+
+                <div class="form-group radio-group">
+                    <label>Overall Satisfaction</label>
+                    <div class="radio-options">
+                        <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
+                        <label for="very-satisfied">Very Satisfied</label><br>
+                        <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+                        <label for="satisfied">Satisfied</label><br>
+                        <input type="radio" id="not-satisfied" name="satisfaction" value="not-satisfied">
+                        <label for="not-satisfied">Not Satisfied</label><br>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 💻 <span class="highlight">Donald Polidor</span> 💻 Haïti</p>
+        <p id="lastModified">Last modification: <span class="highlight"></span></p>
+        <div class="contact">
+            <p>☎ +(509) 4428-7832 / 3210-3217</p>
+            <p>✉ donaldpolidor30@gmail.com</p>
+            <p>📍Port-au-Prince (Haïti), 38 Pacot ,Garoute street.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/donaldgraffiti?igsh=MTdzbnM5N3VzcGh5cg==" target="_blank"><img
+                    src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/donal.polidor?mibextid=ZbWKwL" target="_blank"><img
+                    src="images/Facebook.webp" alt="Facebook"></a>
+            <a href="https://x.com/GraffitiDonald?t=G3odicqso5xDLiuBUDtZ4w&s=09" target="_blank"><img
+                    src="images/X_logo.png" alt="X"></a>
+            <a href="https://www.threads.net/@donaldgraffiti" target="_blank"><img src="images/threads-logo.png"
+                    alt="Threads"></a>
+        </div>
+    </footer>
+
+    <script src="scripts/rating.js" defer></script>
+</body>
+
+</html>

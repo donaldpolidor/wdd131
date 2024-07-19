@@ -68,3 +68,14 @@
         width: 90%;
     }
 }
+
+@media only screen and (min-width: 769px) {
+    .form-group.radio-group .radio-options {
+        flex-direction: row; /* Alignement en ligne pour les grands écrans */
+        align-items: center; /* Centrage vertical des éléments */
+    }
+
+    .form-group.radio-group label {
+        margin-right: 10px; /* Espacement entre les labels */
+    }
+}

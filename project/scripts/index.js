@@ -51,3 +51,45 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(image);
     });
 });
+
+
+// rating.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    const stars = document.querySelectorAll('.rating span');
+    const ratingValue = document.getElementById('ratingValue');
+
+    stars.forEach((star) => {
+        star.addEventListener('click', function() {
+            const value = parseInt(star.dataset.value);
+
+            // Reset all stars
+            stars.forEach((s) => s.classList.remove('active'));
+
+            // Activate selected stars
+            for (let i = 0; i < value; i++) {
+                stars[i].classList.add('active');
+            }
+
+            // Set the rating value in hidden input
+            ratingValue.value = value;
+        });
+    });
+
+    const form = document.getElementById('ratingForm');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // You can add form validation logic here
+        // For example, validate required fields
+
+        // Example: Save to localStorage (if needed)
+        const formData = new FormData(form);
+        const formDataObj = Object.fromEntries(formData.entries());
+        localStorage.setItem('ratingFormData', JSON.stringify(formDataObj));
+
+        alert('Thank you for your feedback!');
+        form.reset(); // Clear the form after submission
+    });
+});

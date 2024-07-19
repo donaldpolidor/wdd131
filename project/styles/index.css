@@ -252,3 +252,86 @@ footer p {
     width: 20px;
 }
 
+/* rating.css */
+
+.container-form {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 1rem;
+    background-color: white;
+    text-align: center; /* Ajout pour centrer les éléments à l'intérieur */
+}
+
+.container-form h1{
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-group.radio-group {
+    text-align: left; /* Alignement du texte à gauche */
+    font-size: 15px;
+}
+
+.form-group.radio-group label {
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-group.radio-group .radio-options {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+select, input, textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px; /* Espacement par rapport aux éléments précédents */
+    padding: 10px 20px;
+    background-color: rgb(140, 0, 255);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-block; /* Assure que le bouton se centre correctement */
+}
+
+button:hover {
+    background-color: rgb(110, 0, 230);
+}
+
+.rating {
+    display: flex;
+}
+
+.rating span {
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.rating span:hover,
+.rating span.active {
+    color: gold;
+}
