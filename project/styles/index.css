@@ -282,6 +282,10 @@ footer p {
     text-align: center;
 }
 
+.label-title{
+    font-size: 20px;
+}
+
 .form-group.radio-group .radio-options {
     display: flex;
     flex-direction: column;
