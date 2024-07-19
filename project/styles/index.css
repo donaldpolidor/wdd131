@@ -70,7 +70,7 @@ nav .nav-container {
 }
 
 .container h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -83,7 +83,7 @@ nav .nav-container {
 }
 
 .container p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: rgb(0, 0, 0);
     margin-bottom: 2rem;
     text-align: justify;
@@ -103,7 +103,7 @@ nav .nav-container {
 }
 
 .biography-box h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     background-color: rgb(140, 0, 255);
     color: white;
@@ -152,6 +152,7 @@ nav .nav-container {
     color: white;
     background-color: blueviolet;
     padding: 0.1rem;
+    font-size: 13px;
 }
 
 .image-grid {
@@ -206,13 +207,12 @@ nav .nav-container {
 
 .Model1 {
     text-align: center;
-    margin: 20px;
+    margin: 15px;
     padding: 5px;
-    border-top: 1px solid black;
-    width: 100%;
-    color: rgb(140, 0, 255);
-    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
     margin-bottom: 0;
+    background-color: gray;
 }
 
 
