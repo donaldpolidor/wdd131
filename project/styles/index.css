@@ -210,7 +210,7 @@ nav .nav-container {
     margin: 15px;
     padding: 5px;
     color: rgb(255, 255, 255);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 0;
     background-color: gray;
 }
@@ -340,3 +340,4 @@ button:hover {
 .rating span.active {
     color: rgb(140, 0, 255);
 }
+
