@@ -341,3 +341,42 @@ button:hover {
     color: rgb(140, 0, 255);
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.719);
+    overflow:auto ;
+}
+
+.modal-content {
+    position: relative;
+    margin: 10% auto;
+    width: 100%;
+    max-width: 480px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+}
+
+.modal-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.modal-content .modal-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    max-height: 100vh; /* Limit height to fit within viewport */
+}

@@ -93,3 +93,43 @@ document.addEventListener('DOMContentLoaded', function() {
         form.reset(); // Clear the form after submission
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('.image-container img');
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    modal.innerHTML = `
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img class="modal-image" src="" alt="Enlarged Image">
+        </div>
+    `;
+    document.body.appendChild(modal);
+
+    const modalImage = modal.querySelector('.modal-image');
+    const closeButton = modal.querySelector('.close-btn');
+
+    images.forEach(image => {
+        image.addEventListener('click', function() {
+            modalImage.src = image.src;
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Disable scrolling background
+        });
+    });
+
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal || event.target === closeButton) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scrolling background
+        }
+    });
+
+    // Close modal on Escape key press
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && modal.style.display === 'block') {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scrolling background
+        }
+    });
+});
+
